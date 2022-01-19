@@ -1,0 +1,65 @@
+html {
+    padding: 0;
+    margin : 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size  : 14px;
+    height     : 100vh;
+}
+
+$orange      : #F54D0D;
+$lightOrange : #fb642a;
+
+.btn,
+input {
+    &:focus {
+        box-shadow  : none !important;
+        border-color: #ced4da !important;
+    }
+}
+
+input::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+.btn {
+    background-color: $orange;
+    color           : white;
+
+    &:hover,
+    &:focus {
+        background-color: $lightOrange;
+        color           : white;
+    }
+}
+
+.button-position {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.react-calendar {
+    width      : 100% !important;
+    border     : none !important;
+    font-family: 'Mulish', sans-serif !important;
+    font-size  : 14px;
+}
+
+.react-calendar__navigation__label__labelText--from,
+.react-calendar__navigation__arrow {
+    font-weight: bolder !important;
+    font-size  : large;
+}
+
+.react-calendar__navigation__arrow {
+    color    : #f54d0d;
+    font-size: xx-large;
+}
+
+.react-calendar__month-view__days button:disabled > abbr {
+    text-decoration: line-through;
+}
